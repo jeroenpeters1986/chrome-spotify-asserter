@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assertion Selector</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <img src="icons/icon128.png" style="border-radius: 5px;" class="icon">
+        <div>
+            <h1>Assertion-of-rights helper</h1>
+            <small>For podcast creators on Spotify</small>
+        </div>
+
+    </header>
+
+    <p class="help-text">
+        Choose a default resolution for the assertion-of-rights helper.
+        This solution will be prefilled when you use the extension and have
+        to assert the rights for a podcast episode. This will help you get
+        through the process much faster.
+    </p>
+
+    <form id="optionsForm">
+        <label for="assertionSelect">What will be your default resolution?</label>
+        <select id="assertionSelect">
+            <option value="0">I have a license.</option>
+            <option value="1">I am allowed to include this content.</option>
+            <option value="2">This content has never been in my podcast.</option>
+            <option value="3">Unpublish episode, and I'll fix it myself.</option>
+        </select>
+
+        <button type="button" id="save">Save as default</button>
+        <p id="status"></p>
+    </form>
+</div>
+
+<script src="options.js"></script>
+</body>
+</html>
